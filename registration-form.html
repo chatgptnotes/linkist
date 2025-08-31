@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <div class="avatar-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+                        <path d="M12 14C7.66 14 4 17.66 4 22H20C20 17.66 16.34 14 12 14Z" fill="white"/>
+                    </svg>
+                </div>
+                <h2>Create Account</h2>
+                <p class="subtitle">Register now</p>
+            </div>
+            
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="fullName">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="#8B5CF6"/>
+                            <path d="M12 14C7.66 14 4 17.66 4 22H20C20 17.66 16.34 14 12 14Z" fill="#8B5CF6"/>
+                        </svg>
+                        Full Name
+                    </label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="#8B5CF6" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="#8B5CF6" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="#8B5CF6" stroke-width="2"/>
+                        </svg>
+                        Age
+                    </label>
+                    <input type="number" id="age" name="age" placeholder="18" min="18" max="99" required>
+                    <small class="help-text">Must be 18-99 years old (2 digits only)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18" stroke="#8B5CF6" stroke-width="2"/>
+                        </svg>
+                        Mobile Number
+                    </label>
+                    <div class="phone-input-container">
+                        <select id="countryCode" name="countryCode" class="country-code">
+                            <option value="+1">🇺🇸 +1</option>
+                            <option value="+91">🇮🇳 +91</option>
+                            <option value="+44">🇬🇧 +44</option>
+                            <option value="+86">🇨🇳 +86</option>
+                            <option value="+81">🇯🇵 +81</option>
+                            <option value="+49">🇩🇪 +49</option>
+                            <option value="+33">🇫🇷 +33</option>
+                            <option value="+39">🇮🇹 +39</option>
+                            <option value="+34">🇪🇸 +34</option>
+                            <option value="+7">🇷🇺 +7</option>
+                            <option value="+55">🇧🇷 +55</option>
+                            <option value="+52">🇲🇽 +52</option>
+                            <option value="+82">🇰🇷 +82</option>
+                            <option value="+61">🇦🇺 +61</option>
+                            <option value="+27">🇿🇦 +27</option>
+                        </select>
+                        <input type="tel" id="mobile" name="mobile" placeholder="123456789" maxlength="12" required>
+                    </div>
+                    <small class="help-text">Complete number: +1 (0/12 digits)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.676 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+                            <circle cx="12" cy="10" r="3" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+                        </svg>
+                        City
+                    </label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <span class="checkmark"></span>
+                        I consent to the collection and processing of my personal data as described in the <a href="#" class="privacy-link">Privacy Policy</a>. This data will be used solely for registration purposes.
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+                        <path d="M12 14C7.66 14 4 17.66 4 22H20C20 17.66 16.34 14 12 14Z" fill="white"/>
+                    </svg>
+                    Register Now
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage" style="display: none;">
+                <h3>Registration Successful!</h3>
+                <p>Your account has been created successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
