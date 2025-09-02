@@ -1,0 +1,7 @@
+{
+  "name": "StyleMy.Hair - Virtual Hairstyle Try-On",
+  "description": "An AI-powered virtual hairstyle try-on application. Upload your photo, select from a variety of preset styles, or generate custom looks and see a preview in real-time.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
